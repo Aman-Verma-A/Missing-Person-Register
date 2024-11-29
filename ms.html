@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Missing Person Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="course">
+        <h1>PHOTO UPLOAD INSTRUCTIONS</h1>
+  
+          <div class="courses">
+            <img src="assets/img/tony stark.jpg" alt="Web Development" />
+            <div class="details">
+              <span>SAVE</span>
+              <h6>Image Should be Clear and Save Image with name of the Person eg(tony.jpg)</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+               
+          </div>
+  
+          <div class="courses">
+            <img src="assets/img/jp.jpg" alt="Web Development" />
+            <div class="details">
+              <span>FORMATE</span>
+              <h6>Photo should be in .jpg Formate</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+               
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- Registration Form Section -->
+    <form id="missingPersonForm" action="register.php" method="POST" enctype="multipart/form-data">
+
+    <section class="registration-form">
+        <div class="container">
+            <h2>Missing Person Registration</h2>
+            <form id="missingPersonForm">
+                <div class="form-group">
+                    <label for="name">Name of Missing Person:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="firID">FIR ID:</label>
+                    <input type="text" id="firID" name="firID" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="registeredBy">Registered By:</label>
+                    <input type="text" id="registeredBy" name="registeredBy" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="photo">Upload Missing Person Photo:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+            <li><a href="index.html" class="home">HOME</a></li>
+        </div>
+    </section>
+  
+    <script src="scripts.js"></script>
+</body>
+</html>
